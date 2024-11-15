@@ -1,8 +1,10 @@
-# **HyperionVM**: A Stealth Virtual Machine for Low-Level Memory Manipulation
+# **HyperionVM**: A stealth virtual machine that bypasses Windows API hooks
 
 ## Overview
 
 **HyperionVM** is a high-performance, custom WinAPI virtual machine (VM) designed for low-level memory operations and process manipulation, mainly for bypassing SafeGuard while being inspired by SXVM. By re-implementing key Windows API functions and providing a flexible environment for C/C++ code, HyperionVM allows developers and researchers to bypass modern antivirus software, emulate system behaviors, and interact with processes and memory in an efficient and stealthy way.
+
+HVM is designed to bypass Windows API hooks by recreating critical system functions. Instead of calling the native Windows APIs, it uses its own custom versions that operate on the VM's state, not the underlying Windows state. This prevents antivirus software and security mechanisms from detecting or interfering with the operations, allowing for secure memory manipulation, process control, and script development without triggering traditional security alerts.
 
 ## Features & Capabilities
 
